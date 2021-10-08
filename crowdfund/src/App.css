@@ -1,0 +1,74 @@
+:root{
+    box-sizing: border-box;
+}
+#App{
+    background-image: url("./images/image-hero-mobile.jpg");
+    background-position: 50% -5px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    max-width: 375px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.defaultTheme{
+    --clr-primary-cyan: hsl(176, 50%, 47%);
+    --clr-secondary-cyan: hsl(176, 72%, 28%);
+    --clr-black: hsl(0, 0%, 0%);
+    --clr-dark-gray: hsla(0, 0%, 50%, 0.5);
+
+    --ff-wght-text: 400;
+    --ff-wght-button: 500;
+    --ff-wght-heading: 700;
+
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Commissioner', sans-serif;
+    width: 100%;
+    background-color:whitesmoke;
+    line-height: 1.6;
+    letter-spacing: -0.7px;
+    overflow: hidden;
+
+}
+
+.articleWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30vh;
+    width: 90%;
+}
+
+.card{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    background-color: white;
+    border: 1px solid rgba(224, 221, 221, 0.493);
+    margin-bottom: 1.5em;
+    padding: 1em 1.5em;
+}
+
+@media only screen and (min-width: 1080px) {
+    .articleWrapper{
+        width: 50%;
+    }
+    #App{
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+        background-image: url("./images/image-hero-desktop.jpg");
+        background-position: 50% -5px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-size: contain;
+    }
+    .card{
+        padding: 1em 3em;
+    }
+}

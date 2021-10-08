@@ -1,0 +1,32 @@
+.cardWrapper{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position:fixed;
+    top: 16%;
+    z-index: 99;
+    width: 21rem;
+    color: var(--clr-dark-gray);
+    font-weight: var(--ff-wght-button);
+    margin: 0;
+}
+
+.modalPledgeReceived{
+    margin: 0;
+    padding: 2.5em 1em;
+}
+
+.modalPledgeReceived>img{
+    width: 5em;
+}
+
+.modalPledgeReceived>p{
+    margin-bottom: 3em;
+}
+
+.modalPledgeReceived>h3{
+    color: var(--clr-black);
+    font-weight: var(--ff-wght-heading);
+
+}
